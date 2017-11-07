@@ -18,3 +18,17 @@
 		width: 960px;
 	}
 }
+
+// .container-fluid
+// 640 / 768 = 84%
+// 960 / .84 = 1142px центровка начинается раньше 1200px
+
+.container-fluid() {
+	width: auto;
+
+	@media @tablet-widths {
+		width: 84%;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}

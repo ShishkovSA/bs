@@ -1,0 +1,46 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+		background-position: @x @y;
+		width: @width;
+		height: @height;
+}
+
+.sprite {
+		background-image: url(spritesheet.png);    background-repeat: no-repeat;
+		display: block;
+
+		&.sprite-fb-big {
+				.stitches-sprite(-15px, -15px, 18px, 38px);
+		}
+
+		&.sprite-fb-small {
+				.stitches-sprite(-15px, -83px, 10px, 21px);
+		}
+
+		&.sprite-ig-big {
+				.stitches-sprite(-15px, -134px, 36px, 36px);
+		}
+
+		&.sprite-ig-small {
+				.stitches-sprite(-15px, -200px, 19px, 19px);
+		}
+
+		&.sprite-login {
+				.stitches-sprite(-15px, -249px, 16px, 16px);
+		}
+
+		&.sprite-login-desktop-hover {
+				.stitches-sprite(-15px, -295px, 16px, 16px);
+		}
+
+		&.sprite-login-tablet-hover {
+				.stitches-sprite(-15px, -341px, 16px, 16px);
+		}
+
+		&.sprite-vk-big {
+				.stitches-sprite(-15px, -387px, 23px, 26px);
+		}
+
+		&.sprite-vk-small {
+				.stitches-sprite(-15px, -443px, 15px, 17px);
+		}
+}
