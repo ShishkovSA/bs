@@ -1,0 +1,35 @@
+.input-checkbox__btn {
+	display: none;
+}
+
+.input-checkbox {
+	position: relative;
+	padding-left: 60px;
+}
+
+.input-checkbox__indicator {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 36px;
+	height: 36px;
+	border: 1px solid #e5ddd5;
+	background: #fff;
+}
+
+.input-checkbox__value {
+	line-height: 36px;
+}
+
+.input-checkbox__btn:checked + .input-checkbox__indicator:after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 6px;
+	transform: rotate(-45deg);
+	width: 23px;
+	height: 11px;
+	border-left: 3px solid #000;
+	border-bottom: 3px solid #000;
+	background: transparent;
+}
