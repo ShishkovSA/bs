@@ -6,7 +6,7 @@
 		<title>Барбершоп «Бородинский»</title>
 		<link rel="stylesheet" href="css/style.min.css">
 	</head>
-	<body>
+	<body class="main-bg">
 		<header class="page-header">
 			<h1 class="visually-hidden">Барбершоп «Бородинский» - истинно мужская классика</h1>
 			<div class="page-header__logo">
@@ -29,6 +29,7 @@
 					<ul class="main-nav__user-items">
 						<li class="main-nav__user-item"><a class="main-nav__user-login" href="#" title="Войти">Вход</a></li>
 					</ul>
+				</div>
 			</nav>
 		</header>
 		<section class="stats">
@@ -103,7 +104,7 @@
 					</li>
 					<li class="news__item  news__item--show">
 						<a class="news__item-wrapper" href="#">
-							<time class="news__date" datetime="2015-09-9"><b>9</b> сент</time>
+							<time class="news__date" datetime="2015-09-09"><b>9</b> сент</time>
 							<p>Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!</p>
 						</a>
 					</li>
@@ -118,7 +119,7 @@
 				<input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
 				<input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
 				<div class="reviews__items">
-					<section class="reviews__item  slider__item">
+					<div class="reviews__item  slider__item">
 						<div class="reviews__author-photo">
 							<picture>
 								<source
@@ -140,8 +141,8 @@
 						</div>
 						<cite class="reviews__author-name">Трэвис Баркер</cite>
 						<blockquote class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</blockquote>
-					</section>
-					<section class="reviews__item  slider__item">
+					</div>
+					<div class="reviews__item  slider__item">
 						<div class="reviews__author-photo">
 							<picture>
 								<source
@@ -163,8 +164,8 @@
 						</div>
 						<cite class="reviews__author-name">Вин Дроссель</cite>
 						<blockquote class="reviews__text">Спасибо за шикарную стрижку!</blockquote>
-					</section>
-					<section class="reviews__item  slider__item">
+					</div>
+					<div class="reviews__item  slider__item">
 						<div class="reviews__author-photo">
 							<picture>
 								<source
@@ -186,9 +187,12 @@
 						</div>
 						<cite class="reviews__author-name">Трэвис Баркер</cite>
 						<blockquote class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</blockquote>
-					</section>
-					<button class="reviews__prev" type="button">Предыдущий отзыв</button>
-					<button class="reviews__next" type="button">Следующий отзыв</button>
+					</div>
+				</div>
+				<div class="slider__side-toggles">
+					<label class="slider__side-toggle" for="reviews-input-1"></label>
+					<label class="slider__side-toggle" for="reviews-input-2"></label>
+					<label class="slider__side-toggle" for="reviews-input-3"></label>
 				</div>
 				<div class="reviews__toggles  slider__toggles">
 					<label class="reviews__toggle  slider__toggle" for="reviews-input-1">1</label>
@@ -200,44 +204,44 @@
 		</section>
 		<footer class="page-footer">
 			<div class="page-footer__wrapper">
-				<section class="page-footer__contacts">
+				<div class="page-footer__contacts">
 					<p>
 						<b>Барбершоп Бородинский</b>
 						г. Санкт-Петербург, ул. Большая Конюшенная 19/8
 					</p>
 					<a class="btn  btn--footer btn--none" href="tel:+78125556666"><span class="page-footer__phone-show">Тел.:</span> +7 (812) 555-66-66</a>
-				</section>
-				<section class="page-footer__social">
+				</div>
+				<div class="page-footer__social">
 					<span class="page-footer__social-title">Давайте дружить!</span>
 					<div class="social-links">
 						<a class="social-link  social-link--vk" href="#">Мы в Вконтакте</a>
 						<a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
 						<a class="social-link  social-link--ig" href="#">Мы в Инстаграме</a>
 					</div>
-				</section>
-				<section class="page-footer__copyright">
+				</div>
+				<div class="page-footer__copyright">
 					Разработано:
 					<a class="btn  btn--footer" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-				</section>
+				</div>
 			</div>
 		</footer>
 		<section class="modal-login">
 			<h2 class="modal-login__title">Личный кабинет</h2>
 			<p>Введите свой логин и пароль, чтобы войти</p>
 			<form class="modal-login__form" action="#" method="POST">
-				<label for="login">
-					<input type="text" id="login" placeholder="Логин">
+				<input class="modal-login__login  input-text" type="text" placeholder="Логин">
+				<input class="modal-login__password  input-text" type="password" placeholder="Пароль">
+				<label for="remember">
+					Запомнить меня
+					<input type="checkbox" id="remember" name="remember">
+					<span class="modal-login__checkbox-indicator"></span>
 				</label>
-				<label for="password">
-					<input type="text" id="password" placeholder="Пароль">
-				</label>
-				<input type="checkbox" name="remember" id="remember">
-				<label for="remember"><span>Запомнить меня</span></label>
 				<a href="#">Я забыл пароль!</a>
-				<button class="modal-login__enter" type="submit">Войти <span>в личный кабинет</span></button>
+				<button class="modal-login__enter  btn btn--brown" type="submit">Войти <span>в личный кабинет</span></button>
 				<button class="modal-login__close  btn" type="button">Закрыть</button>
 			</form>
 		</section>
+		<div class="modal-overlay"></div>
 		<script>
 			var navMain = document.querySelector('.main-nav');
 			var navToggle = document.querySelector('.main-nav__toggle');
