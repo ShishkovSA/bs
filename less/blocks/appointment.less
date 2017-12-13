@@ -1,0 +1,242 @@
+.appointment {
+	position: relative;
+	color: #000;
+	background-color: @bg-light;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 34px;
+		background-image:
+			linear-gradient(
+				to right top,
+				@bg-darkgrey 49%,
+				@bg-light 51%
+			),
+			linear-gradient(
+				to right bottom,
+				@bg-light 49%,
+				@bg-darkgrey 51%
+			);
+		background-repeat: no-repeat;
+		background-position: left top, right top;
+		background-size: 50% 34px;
+		}
+}
+
+.appointment__form {
+	.container-fluid();
+
+	padding: 0 6%;
+	padding-top: 34px;
+	padding-bottom: 74px;
+}
+
+.appointment__title {
+	margin: 0;
+	margin-bottom: 30px;
+	font-size: 30px;
+	line-height: 1;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.appointment__back {
+	display: none;
+}
+
+.appointment__contacts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	border: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+.appointment__contacts .input-text {
+	width: 100%;
+	margin-bottom: 6px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.appointment__contacts textarea {
+	width: 100%;
+	height: 112px;
+	resize: none;
+}
+
+.appointment__models {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.appointment__subtitle{
+	width: 100%;
+	margin: 0;
+	margin-bottom: 30px;
+	font-size: 20px;
+	line-height: 27px;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.appointment__model {
+	width: 80px;
+	margin-bottom: 30px;
+}
+
+.appointment__options {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 45px;
+}
+
+.appointment__option {
+	width: 100%;
+	margin-bottom: 20px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.appointment__submit {
+	width: 100%;
+}
+
+@media @tablet-widths {
+
+	.appointment {
+
+		&::after {
+			content: none;
+		}
+	}
+
+	.appointment__form {
+		position: relative;
+		padding: 0;
+		padding-top: 60px;
+		padding-bottom: 75px;
+	}
+
+	.appointment__title {
+		margin-bottom: 75px;
+		font-size: 40px;
+		text-align: left;
+	}
+
+	.appointment__back {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 60px;
+		width: 160px;
+	}
+
+	.appointment__contacts {
+		margin-bottom: 55px;
+	}
+
+	.appointment__contacts .input-text {
+		margin-bottom: 35px;
+	}
+
+	.appointment__contacts .input-text[type="text"] {
+		width: 33.33%;
+	}
+
+	.appointment__contacts textarea {
+		height: 212px;
+	}
+
+	.appointment__models {
+		margin-bottom: 30px;
+	}
+
+	.appointment__subtitle {
+		position: relative;
+		margin-bottom: 45px;
+		font-size: 30px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 50%;
+			height: 1px;
+			background: #e5ddd5;
+			z-index: 1;
+		}
+	}
+
+	.appointment__subtitle span {
+		position: relative;
+		padding: 0 40px;
+		background: @bg-light;
+		z-index: 2;
+	}
+
+	.appointment__options {
+		margin-bottom: 60px;
+	}
+
+	.appointment__options .appointment__subtitle {
+		margin-bottom: 70px;
+	}
+
+	.appointment__option {
+		width: 50%;
+		margin-bottom: 45px;
+	}
+}
+
+@media @desktop-widths {
+
+	.appointment__form {
+		padding-bottom: 85px;
+	}
+
+	.appointment__contacts {
+		justify-content: space-between;
+		margin-bottom: 75px;
+	}
+
+	.appointment__contacts .input-text[type="text"] {
+		width: 30%;
+	}
+
+	.appointment__contacts .input-text[type="tel"] {
+		width: 48%;
+	}
+
+	.appointment__contacts .input-text[type="email"] {
+		width: 48%;
+	}
+
+	.appointment__subtitle {
+		margin-bottom: 50px;
+	}
+
+	.appointment__options {
+		margin-bottom: 80px;
+	}
+
+	.appointment__option {
+		width: 33.33%;
+	}
+}
+
