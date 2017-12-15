@@ -1,0 +1,48 @@
+.section-header {
+	.container-fluid();
+
+	margin-bottom: 30px;
+}
+
+.section-header__title {
+	margin: 0;
+	font-size: 30px;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.section-header__btn {
+	display: none;
+}
+
+@media @tablet-widths {
+
+	.section-header {
+		position: relative;
+		margin-bottom: 50px;
+	}
+
+	.section-header__title {
+		font-size: 40px;
+		line-height: 50px;
+		text-align: left;
+	}
+
+	.section-header__btn {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: auto;
+		width: 160px;
+	}
+}
+
+@media @desktop-widths {
+
+	.section-header__title--margin {
+		margin-left: 70px;
+	}
+}

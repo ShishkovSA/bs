@@ -1,5 +1,7 @@
 .appointment {
 	position: relative;
+	padding: 34px 6%;
+	padding-bottom: 74px;
 	color: #000;
 	background-color: @bg-light;
 
@@ -29,23 +31,6 @@
 
 .appointment__form {
 	.container-fluid();
-
-	padding: 0 6%;
-	padding-top: 34px;
-	padding-bottom: 74px;
-}
-
-.appointment__title {
-	margin: 0;
-	margin-bottom: 30px;
-	font-size: 30px;
-	line-height: 1;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.appointment__back {
-	display: none;
 }
 
 .appointment__contacts {
@@ -119,23 +104,13 @@
 @media @tablet-widths {
 
 	.appointment {
+		padding: 0;
+		padding-top: 60px;
+		padding-bottom: 75px;
 
 		&::after {
 			content: none;
 		}
-	}
-
-	.appointment__form {
-		position: relative;
-		padding: 0;
-		padding-top: 60px;
-		padding-bottom: 75px;
-	}
-
-	.appointment__title {
-		margin-bottom: 75px;
-		font-size: 40px;
-		text-align: left;
 	}
 
 	.appointment__back {
@@ -206,7 +181,7 @@
 
 @media @desktop-widths {
 
-	.appointment__form {
+	.appointment {
 		padding-bottom: 85px;
 	}
 
