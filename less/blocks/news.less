@@ -38,6 +38,32 @@
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
+	transition: .6s;
+
+	&:hover {
+		color: #826550;
+		text-decoration: underline;
+	}
+
+	&:hover .news__date {
+		background: #826550;
+
+		&::after {
+			border-top-color: #826550;
+		}
+	}
+
+	&:active {
+		color: #6a4d38;
+	}
+
+	&:active .news__date {
+		background: #6a4d38;
+
+		&::after {
+			border-top-color: #6a4d38;
+		}
+	}
 }
 
 .news__item-wrapper p {
@@ -57,6 +83,7 @@
 	text-align: center;
 	color: #fff;
 	background: #000;
+	transition: .6s;
 
 	&::after {
 		content: "";
@@ -68,6 +95,7 @@
 		border-left: 25px solid transparent;
 		border-right: 25px solid transparent;
 		border-bottom-width: 0;
+		transition: .6s;
 	}
 }
 

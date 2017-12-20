@@ -15,13 +15,23 @@
 	height: 36px;
 	border: 1px solid #e5ddd5;
 	background: #fff;
+
+	&:hover {
+		border-color: #d5c9bd;
+	}
+
+	&:active {
+		background: #d5c9bd;
+	}
 }
 
 .input-checkbox__value {
 	line-height: 36px;
 }
 
-.input-checkbox__btn:checked + .input-checkbox__indicator:after {
+.input-checkbox__btn:checked + .input-checkbox__indicator {
+
+	&::after {
 	content: "";
 	position: absolute;
 	top: 9px;
@@ -32,4 +42,5 @@
 	border-left: 3px solid #000;
 	border-bottom: 3px solid #000;
 	background: transparent;
+	}
 }
