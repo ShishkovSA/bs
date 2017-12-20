@@ -39,6 +39,13 @@ var run = require("run-sequence");
 /*Модуль для удаления del*/
 var del = require("del");
 
+var ghPages = require('gulp-gh-pages');
+
+gulp.task("deploy", function() {
+	return gulp.src("./build/**/*")
+		.pipe(ghPages());
+});
+
 gulp.task("style", function() {      /*Описание таска*/
 	gulp.src("less/style.less")
 		.pipe(plumber())
