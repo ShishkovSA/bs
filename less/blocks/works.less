@@ -1,0 +1,262 @@
+.works {
+	position: relative;
+	padding-top: 34px;
+	padding-bottom: 48px;
+	color: #000;
+	background-color: @bg-light;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 34px;
+		background-image:
+			linear-gradient(
+				to right top,
+				@bg-lightgrey 49%,
+				@bg-light 51%
+			),
+			linear-gradient(
+				to right bottom,
+				@bg-light 49%,
+				@bg-lightgrey 51%
+			);
+		background-repeat: no-repeat;
+		background-position: left top, right top;
+		background-size: 50% 34px;
+		}
+}
+
+.works__items {
+	.container-fluid();
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.works__item {
+	position: relative;
+	width: 280px;
+	margin-bottom: 20px;
+}
+
+.works__item-label {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	padding-left: 25px;
+	padding-right: 17px;
+	font-size: 20px;
+	line-height: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #826550;
+
+	&::after {
+		content: "";
+		position: absolute;
+		right: -8px;
+		top: 50%;
+		transform: translateY(-50%);
+		border-top: 25px solid #826550;
+		border-bottom: 25px solid #826550;
+		border-right: 8px solid transparent;
+	}
+}
+
+.works__description {
+	padding: 20px 25px;
+	border: 1px solid #e5ddd5;
+	border-top: none;
+}
+
+.works__author-name {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.works__author-text {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.works__styles {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.works__style {
+	position: relative;
+	margin-bottom: 10px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		background-repeat: no-repeat;
+	}
+}
+
+.works__style-hair {
+	padding-left: 35px;
+
+	&::before {
+		width: 21px;
+		height: 20px;
+		background-image: url("../img/scissors-icon.svg");
+	}
+}
+
+.works__style-shave {
+	padding-left: 40px;
+
+	&::before {
+		width: 23px;
+		height: 21px;
+		background-image: url("../img/beard-icon.svg");
+	}
+}
+
+.works__style-mustache {
+	padding-left: 55px;
+
+	&::before {
+		width: 45px;
+		height: 12px;
+		background-image: url("../img/mustache-icon.svg");
+	}
+}
+
+@media @tablet-widths {
+
+	.works {
+		padding-top: 60px;
+		padding-bottom: 100px;
+
+		&::after {
+			height: 40px;
+			background-size: 50% 40px;
+		}
+	}
+
+	.works__item {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.works__description {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		width: 50%;
+		padding-top: 45px;
+		padding-bottom: 30px;
+		padding-left: 50px;
+		padding-right: 50px;
+		border: 1px solid #e5ddd5;
+		border-left: none;
+	}
+
+	.works__styles {
+		margin-top: auto;
+	}
+
+	.works__style {
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@media @desktop-widths {
+
+	.works {
+		padding-top: 60px;
+		padding-bottom: 50px;
+
+		&::after {
+			content: none;
+		}
+	}
+
+	.works__items {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+
+	.works__item {
+		flex-direction: column;
+		width: 294px;
+	}
+
+	.works__item--best {
+		flex-direction: row;
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.works__item-label {
+		position: absolute;
+		left: auto;
+		right: 0;
+		padding-left: 17px;
+		padding-right: 25px;
+
+		&::after {
+			right: auto;
+			left: -8px;
+			border-left: 8px solid transparent;
+		}
+	}
+
+	.works__description {
+		width: 100%;
+		padding: 30px 35px;
+		padding-bottom: 20px;
+		border: 1px solid #e5ddd5;
+		border-top: none;
+	}
+
+	.works__description--best {
+		width: 50%;
+		padding-top: 135px;
+		padding-left: 40px;
+		padding-right: 100px;
+		border: 1px solid #e5ddd5;
+		border-left: none;
+	}
+
+	.works__author-name {
+		margin-bottom: 30px;
+	}
+
+	.works__author-text {
+		margin: 0;
+		margin-bottom: 25px;
+	}
+
+	.work__styles {
+	}
+}
