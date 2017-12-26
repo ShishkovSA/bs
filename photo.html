@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Барбершоп «Бородинский»</title>
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body class="main-bg  main-bg--light">
+		<header class="page-header">
+			<div class="page-header__logo  page-header__logo--inner">
+				<picture>
+					<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+					<source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+					<img src="img/logotype-mobile.svg" alt="Барбершоп «Бородинский»">
+				</picture>
+			</div>
+			<nav class="main-nav  main-nav--closed  main-nav--nojs">
+				<button class="main-nav__toggle" type="button">Открыть меню</button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__items">
+						<li class="main-nav__item"><a href="index.html">Главная</a></li>
+						<li class="main-nav__item  main-nav__item--active"><a>Наши работы</a></li>
+						<li class="main-nav__item"><a href="form.html">Записаться</a></li>
+						<li class="main-nav__item"><a href="#">Контакты</a></li>
+						<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+					</ul>
+					<ul class="main-nav__user-items">
+						<li class="main-nav__user-item"><a class="main-nav__user-login" href="#" title="Войти">Вход</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section class="works">
+			<header class="section-header">
+				<h1 class="section-header__title">Наши работы</h1>
+				<a class="section-header__btn  btn" href="index.html">На главную</a>
+			</header>
+			<div class="works__items">
+				<article class="works__item  works__item--best">
+					<div class="works__item-label">Работа месяца</div>
+					<picture>
+						<source
+							media="(min-width: 1200px)"
+							srcset="img/photo-1-desktop.jpg">
+						<source
+							media="(min-width: 768px)"
+							srcset="img/photo-1-tablet.jpg">
+						<img src="img/photo-1-mobile.jpg" alt="Лжепётр Мчиславский">
+					</picture>
+					<div class="works__description  works__description--best">
+						<cite class="works__author-name">Лжепётр Мчиславский</cite>
+						<blockquote class="works__author-text">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</blockquote>
+						<ul class="works__styles">
+							<li class="works__style  works__style-hair">Стрижка</li>
+							<li class="works__style  works__style-shave">Бритье</li>
+							<li class="works__style  works__style-mustache">Усы</li>
+						</ul>
+					</div>
+				</article>
+				<article class="works__item">
+					<picture>
+						<source
+							media="(min-width: 1200px)"
+							srcset="img/photo-2-desktop.jpg">
+						<source
+							media="(min-width: 768px)"
+							srcset="img/photo-2-tablet.jpg">
+						<img src="img/photo-2-mobile.jpg" alt="Саша Мальцев">
+					</picture>
+					<div class="works__description">
+						<cite class="works__author-name">Саша Мальцев</cite>
+						<blockquote class="works__author-text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</blockquote>
+						<ul class="works__styles">
+							<li class="works__style  works__style-hair">Стрижка</li>
+						</ul>
+					</div>
+				</article>
+				<article class="works__item">
+					<picture>
+						<source
+							media="(min-width: 1200px)"
+							srcset="img/photo-3-desktop.jpg">
+						<source
+							media="(min-width: 768px)"
+							srcset="img/photo-3-tablet.jpg">
+						<img src="img/photo-3-mobile.jpg" alt="Владимир Иваныч">
+					</picture>
+					<div class="works__description">
+						<cite class="works__author-name">Владимир Иваныч</cite>
+						<blockquote class="works__author-text">К зимнему сезону — готов!</blockquote>
+						<ul class="works__styles">
+							<li class="works__style  works__style-shave">Бритье</li>
+							<li class="works__style  works__style-mustache">Усы</li>
+						</ul>
+					</div>
+				</article>
+				<article class="works__item">
+					<picture>
+						<source
+							media="(min-width: 1200px)"
+							srcset="img/photo-4-desktop.jpg">
+						<source
+							media="(min-width: 768px)"
+							srcset="img/photo-4-tablet.jpg">
+						<img src="img/photo-4-mobile.jpg" alt="Винстон Синий">
+					</picture>
+					<div class="works__description">
+						<cite class="works__author-name">Винстон Синий</cite>
+						<blockquote class="works__author-text">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</blockquote>
+						<ul class="works__styles">
+							<li class="works__style  works__style-hair">Стрижка</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="prices">
+			<header class="section-header">
+				<h2 class="section-header__title  section-header__title--white">Прейскурант</h2>
+			</header>
+			<table class="prices__table">
+				<tr>
+					<td class="prices__table-number">1</td>
+					<td class="prices__table-name"><b>Классическая стрижка</b><span class="prices__table-addition"><br>(с мытьем головы)</span></td>
+					<td class="prices__table-wash">с мытьем головы</td>
+					<td class="prices__table-price">1500 руб.</td>
+				</tr>
+				<tr>
+					<td class="prices__table-number">2</td>
+					<td class="prices__table-name"><b>Современный вариант</b><span class="prices__table-addition"><br>(с мытьем головы)</span></td>
+					<td class="prices__table-wash">с мытьем головы</td>
+					<td class="prices__table-price">1500 руб.</td>
+				</tr>
+				<tr>
+					<td class="prices__table-number">3</td>
+					<td class="prices__table-name"><b>Индивидуальный подход</b><span class="prices__table-addition"><br>(с мытьем головы)</span></td>
+					<td class="prices__table-wash">с мытьем головы</td>
+					<td class="prices__table-price">200 руб.</td>
+				</tr>
+				<tr>
+					<td class="prices__table-number">4</td>
+					<td class="prices__table-name"><b>Бритье бороды</b><span class="prices__table-addition"><br>(без мытья)</span></td>
+					<td class="prices__table-wash">без мытья</td>
+					<td class="prices__table-price">500 руб.</td>
+				</tr>
+				<tr>
+					<td class="prices__table-number">5</td>
+					<td class="prices__table-name"><b>Бритье головы</b><span class="prices__table-addition"><br>(с мытьем головы)</span></td>
+					<td class="prices__table-wash">с мытьем головы</td>
+					<td class="prices__table-price">1000 руб.</td>
+				</tr>
+			</table>
+		</section>
+		<footer class="page-footer">
+			<div class="page-footer__wrapper">
+				<div class="page-footer__contacts">
+					<p>
+						<b>Барбершоп Бородинский</b>
+						г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+					</p>
+					<a class="btn  btn--footer btn--none" href="tel:+78125556666"><span class="page-footer__phone-show">Тел.:</span> +7 (812) 555-66-66</a>
+				</div>
+				<div class="page-footer__social">
+					<span class="page-footer__social-title">Давайте дружить!</span>
+					<div class="social-links">
+						<a class="social-link  social-link--vk" href="#">Мы в Вконтакте</a>
+						<a class="social-link  social-link--fb" href="#">Мы в Фейсбуке</a>
+						<a class="social-link  social-link--ig" href="#">Мы в Инстаграме</a>
+					</div>
+				</div>
+				<div class="page-footer__copyright">
+					Разработано:
+					<a class="btn  btn--footer" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+				</div>
+			</div>
+		</footer>
+		<section class="modal-login">
+			<h2 class="modal-login__title">Личный кабинет</h2>
+			<p>Введите свой логин и пароль, чтобы войти</p>
+			<form class="modal-login__form" action="#" method="POST">
+				<input class="modal-login__login  input-text" type="text" placeholder="Логин">
+				<input class="modal-login__password  input-text" type="password" placeholder="Пароль">
+				<label for="remember">
+					Запомнить меня
+					<input type="checkbox" id="remember" name="remember">
+					<span class="modal-login__checkbox-indicator"></span>
+				</label>
+				<a href="#">Я забыл пароль!</a>
+				<button class="modal-login__enter  btn btn--brown" type="submit">Войти <span>в личный кабинет</span></button>
+				<button class="modal-login__close  btn" type="button">Закрыть</button>
+			</form>
+		</section>
+		<div class="modal-overlay"></div>
+		<script>
+			var navMain = document.querySelector('.main-nav');
+			var navToggle = document.querySelector('.main-nav__toggle');
+			var link = document.querySelector('.main-nav__user-login');
+			var popup = document.querySelector(".modal-login");
+			var close = popup.querySelector(".modal-login__close");
+			var form = popup.querySelector("form");
+			var login = popup.querySelector("[name=login]");
+			var password = popup.querySelector("[name=password]");
+			var storage = localStorage.getItem("login");
+
+			navMain.classList.remove('main-nav--nojs');
+
+			navToggle.addEventListener('click', function() {
+				if (navMain.classList.contains('main-nav--closed')) {
+					navMain.classList.remove('main-nav--closed');
+					navMain.classList.add('main-nav--opened');
+				} else {
+					navMain.classList.add('main-nav--closed');
+					navMain.classList.remove('main-nav--opened');
+				}
+			});
+
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("modal-login--show");
+			});
+
+			close.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.remove("modal-login--show");
+			 });
+		</script>
+	</body>
+</html>
